@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
@@ -14,18 +13,14 @@
     7.  Third Party Elements
     8.  Pagination
     9.  Footer
-    10.  Media Queries (Tablet)
+    10. Media Queries (Tablet)
     11. Media Queries (Mobile)
 
  */
 /* ==========================================================================
    0. Normalize.css v2.1.3 | MIT License | git.io/normalize | (minified)
    ========================================================================== */
-article, aside, details,
-figcaption, figure,
-footer, header, hgroup,
-main, nav, section,
-summary {
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
 audio, canvas, video {
@@ -69,7 +64,6 @@ dfn {
   font-style: italic; }
 
 hr {
-  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -77,8 +71,7 @@ mark {
   background: #ff0;
   color: #000; }
 
-code, kbd, pre,
-samp {
+code, kbd, pre, samp {
   font-family: 'Anonymous Pro', monospace, serif;
   font-size: 1em; }
 
@@ -121,8 +114,7 @@ legend {
   border: 0;
   padding: 0; }
 
-button, input, select,
-textarea {
+button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   margin: 0; }
@@ -133,30 +125,24 @@ button, input {
 button, select {
   text-transform: none; }
 
-button, html input[type="button"],
-input[type="reset"], input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer; }
 
 button[disabled], html input[disabled] {
   cursor: default; }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
   padding: 0; }
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -174,17 +160,13 @@ table {
 /* Import the font file with the icons in it */
 @font-face {
   font-family: 'icons';
-  src: url("../fonts/icons.eot");
-  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
+  src: url('../fonts/icons.eot');
+  src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'), url('../fonts/icons.woff') format('woff'), url('../fonts/icons.ttf') format('truetype'), url('../fonts/icons.svg#icons') format('svg');
   font-weight: normal;
   font-style: normal; }
 
 /* Apply these base styles to all icons */
-.icon-ghost:before,
-.icon-feed:before,
-.icon-twitter:before,
-.icon-google-plus:before,
-.icon-facebook:before {
+.icon-ghost:before, .icon-feed:before, .icon-twitter:before, .icon-google-plus:before, .icon-facebook:before {
   font-family: 'icons';
   speak: none;
   font-style: normal;
@@ -231,7 +213,7 @@ body {
   height: 100%;
   max-height: 100%;
   font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', serif;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 1.6em;
   color: #33424c; }
 
@@ -246,15 +228,15 @@ body {
   text-shadow: none; }
 
 :target {
-  animation: highlight 2s ease;
-  padding: .125em .25em;
+  -webkit-animation: highlight 2s ease;
+          animation: highlight 2s ease;
+  padding: 0.125em 0.25em;
   border-width: 2px 0;
   border-style: dotted;
   border-color: #f10047;
   outline: 0; }
 
-h1, h2, h3,
-h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   line-height: 1;
   margin-top: 0;
@@ -286,24 +268,24 @@ h6 {
 
 a {
   color: #008be6;
-  transition: color ease 0.2s; }
+  -webkit-transition: color ease 0.2s;
+          transition: color ease 0.2s; }
 
 a:hover {
   color: #006eb6; }
 
-h1 a, h2 a, h3 a,
-h4 a, h5 a, h6 a, p a {
-  color: #00c25f; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a {
+  color: #00C25F; }
 
 div, section, article, aside, ul, ol {
   opacity: 1;
-  transition: opacity ease .5; }
+  -webkit-transition: opacity ease 0.5;
+          transition: opacity ease 0.5; }
 
 p, ul, ol, dl {
   margin: 1.6em 0; }
 
-ol ol, ul ul,
-ul ol, ol ul {
+ol ol, ul ul, ul ol, ol ul {
   margin: 0.4em 0; }
 
 ol ol {
@@ -413,7 +395,7 @@ kbd {
   font-weight: bold;
   background: #3f4138;
   border-radius: 4px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 white inset; }
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset; }
 
 table {
   margin: 1.6em 0;
@@ -421,8 +403,7 @@ table {
   max-width: 100%;
   background-color: transparent; }
 
-table th,
-table td {
+table th, table td {
   padding: 8px;
   line-height: 20px;
   text-align: left;
@@ -432,12 +413,7 @@ table td {
 table th {
   color: #000; }
 
-table caption + thead tr:first-child th,
-table caption + thead tr:first-child td,
-table colgroup + thead tr:first-child th,
-table colgroup + thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
+table caption + thead tr:first-child th, table caption + thead tr:first-child td, table colgroup + thead tr:first-child th, table colgroup + thead tr:first-child td, table thead:first-child tr:first-child th, table thead:first-child tr:first-child td {
   border-top: 0; }
 
 table tbody + tbody {
@@ -446,12 +422,10 @@ table tbody + tbody {
 table table table {
   background-color: #fff; }
 
-table tbody > tr:nth-child(odd) > td,
-table tbody > tr:nth-child(odd) > th {
+table tbody > tr:nth-child(odd) > td, table tbody > tr:nth-child(odd) > th {
   background-color: #f6f6f6; }
 
-table.plain tbody > tr:nth-child(odd) > td,
-table.plain tbody > tr:nth-child(odd) > th {
+table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd) > th {
   background: transparent; }
 
 iframe, .fluid-width-video-wrapper {
@@ -467,8 +441,7 @@ margin on the iframe, cause it breaks stuff. */
    3. Utilities - These things get used a lot
    ========================================================================== */
 /* Clears shit */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
 
@@ -551,7 +524,10 @@ margin on the iframe, cause it breaks stuff. */
   padding-bottom: 4rem;
   border-bottom: #e5eef3 1px solid;
   word-break: break-word;
-  hyphens: auto; }
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
 
 /* Add a little circle in the middle of the border-bottom on our .post
    just for the lolz and stylepoints. */
@@ -566,8 +542,6 @@ margin on the iframe, cause it breaks stuff. */
   left: 50%;
   margin-left: -5px;
   background: #fff;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
   border-radius: 100%;
   box-shadow: #fff 0 0 0 5px; }
 
@@ -783,8 +757,6 @@ margin on the iframe, cause it breaks stuff. */
   left: 50%;
   margin-left: -5px;
   background: #fff;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
   border-radius: 100%;
   box-shadow: #fff 0 0 0 5px; }
 
@@ -822,15 +794,15 @@ margin on the iframe, cause it breaks stuff. */
   color: #9aa7b0; }
 
 /* Push the previous/next links out to the left/right */
-.older-posts,
-.newer-posts {
+.older-posts, .newer-posts {
   position: absolute;
   display: inline-block;
   padding: 0 15px;
   border: #e5eef3 2px solid;
   text-decoration: none;
   border-radius: 30px;
-  transition: border ease 0.3s; }
+  -webkit-transition: border ease 0.3s;
+          transition: border ease 0.3s; }
 
 .older-posts {
   right: 0; }
@@ -842,8 +814,7 @@ margin on the iframe, cause it breaks stuff. */
 .newer-posts {
   left: 0; }
 
-.older-posts:hover,
-.newer-posts:hover {
+.older-posts:hover, .newer-posts:hover {
   border-color: #9aa7b0; }
 
 /* ==========================================================================
@@ -892,7 +863,8 @@ margin on the iframe, cause it breaks stuff. */
   line-height: 2.4rem;
   border-radius: 50px;
   background: #fff;
-  transition: box-shadow 0.5s; }
+  -webkit-transition: box-shadow 0.5s;
+          transition: box-shadow 0.5s; }
 
 /* The RSS icon, inserted via icon font */
 .subscribe:before {
@@ -902,12 +874,14 @@ margin on the iframe, cause it breaks stuff. */
   top: 9px;
   left: 9px;
   font-weight: bold;
-  transition: color 0.5s ease; }
+  -webkit-transition: color 0.5s ease;
+          transition: color 0.5s ease; }
 
 /* Add a box shadow to on hover */
 .subscribe:hover {
   box-shadow: rgba(0, 0, 0, 0.05) 0 0 0 3px;
-  transition: box-shadow 0.25s; }
+  -webkit-transition: box-shadow 0.25s;
+          transition: box-shadow 0.25s; }
 
 .subscribe:hover:before {
   color: #33424c; }
@@ -927,7 +901,8 @@ margin on the iframe, cause it breaks stuff. */
   background: #33424c;
   border-radius: 20px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  transition: opacity 0.3s ease, top 0.3s ease; }
+  -webkit-transition: opacity 0.3s ease, top 0.3s ease;
+          transition: opacity 0.3s ease, top 0.3s ease; }
 
 /* The little chiclet arrow under the tooltip, pointing down */
 .tooltip:after {
@@ -954,91 +929,69 @@ margin on the iframe, cause it breaks stuff. */
 @media only screen and (max-width: 900px) {
   blockquote {
     margin-left: 0; }
-
   .site-head {
     height: auto;
     min-height: 240px;
     padding: 15% 0; }
-
   .blog-title {
     font-size: 4rem;
     letter-spacing: -1px; }
-
   .blog-description {
     font-size: 1.7rem;
     line-height: 1.5em; }
-
   .post {
     font-size: 0.9em;
     line-height: 1.6em; }
-
   .post-template .post {
     padding-bottom: 1rem; }
-
   .post-template .post-header {
     padding: 40px 0; }
-
   h1 {
     font-size: 4.8rem;
     text-indent: -2px; }
-
   h2 {
     font-size: 3.8rem; }
-
   h3 {
     font-size: 3.3rem; }
-
   h4 {
     font-size: 2.8rem; } }
+
 /* ==========================================================================
    11. Media Queries - Smaller than 500px
    ========================================================================== */
 @media only screen and (max-width: 500px) {
   .blog-logo img {
     max-height: 80px; }
-
-  .inner,
-  .pagination {
+  .inner, .pagination {
     width: auto;
     margin-left: 16px;
     margin-right: 16px; }
-
   .post {
     width: auto;
     margin-left: 16px;
     margin-right: 16px;
     font-size: 0.8em;
     line-height: 1.6em; }
-
   .site-head {
     padding: 10% 0; }
-
   .blog-title {
     font-size: 3rem; }
-
   .blog-description {
     font-size: 1.5rem; }
-
   h1, h2 {
     font-size: 3rem;
     line-height: 1.1em;
     letter-spacing: -1px; }
-
   h3 {
     font-size: 2.8rem; }
-
   h4 {
     font-size: 2.3rem; }
-
   .post-template .post {
     padding-bottom: 0; }
-
   .post-template .post-header {
     padding: 30px 0; }
-
   .post-content img {
     padding: 0; }
-
   .post-content .full-img {
     width: auto;
     width: calc(100% + 32px);
@@ -1048,37 +1001,29 @@ margin on the iframe, cause it breaks stuff. */
     min-width: 0;
     max-width: 112%;
     /* fallback when calc doesn't work */ }
-
   .post-meta {
     font-size: 1.3rem; }
-
   .post-footer {
     padding: 4rem 0;
     text-align: center; }
-
   .post-footer .author {
     margin: 0 0 2rem 0;
     padding: 0 0 1.6rem 0;
     border-bottom: #e5eef3 1px dashed; }
-
   .post-footer .share {
     position: static;
     width: auto; }
-
   .post-footer .share a {
     margin: 1.4rem 0.8rem 0 0.8rem; }
-
-  .older-posts,
-  .newer-posts {
+  .older-posts, .newer-posts {
     position: static;
     margin: 10px 0; }
-
   .page-number {
     display: block; }
-
   .site-footer {
     margin-top: 6rem;
     font-size: 1.1rem; } }
+
 /* ==========================================================================
    End of file. Media queries should be the last thing here. Do not add stuff
    below this point, or it will probably eff everything up.
