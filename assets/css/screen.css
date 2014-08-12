@@ -274,9 +274,6 @@ a {
 a:hover {
   color: #006eb6; }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a {
-  color: #00C25F; }
-
 div, section, article, aside, ul, ol {
   opacity: 1;
   -webkit-transition: opacity ease 0.5;
@@ -430,7 +427,7 @@ table.plain tbody > tr:nth-child(odd) > td, table.plain tbody > tr:nth-child(odd
 
 iframe, .fluid-width-video-wrapper {
   display: block;
-  margin: 1.6em 0; }
+  margin: 1.6em auto; }
 
 /* When a video is inside the fitvids wrapper, drop the
 margin on the iframe, cause it breaks stuff. */
