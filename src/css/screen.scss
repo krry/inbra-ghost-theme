@@ -572,6 +572,11 @@ margin on the iframe, cause it breaks stuff. */
     text-decoration: none;
 }
 
+.post-excerpt {
+    padding: .5em 1em;
+    margin-left: -1em;
+}
+
 .post-excerpt p {
     margin: 1.6rem 0 0 0;
     font-size: 0.9em;
