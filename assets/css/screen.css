@@ -72,7 +72,7 @@ mark {
   color: #000; }
 
 code, kbd, pre, samp {
-  font-family: 'Anonymous Pro', monospace, serif;
+  font-family: 'Inconsolata', monospace;
   font-size: 1em; }
 
 pre {
@@ -212,7 +212,7 @@ html {
 body {
   height: 100%;
   max-height: 100%;
-  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', serif;
+  font-family: 'Karma', 'Georgia', serif;
   font-size: 2rem;
   line-height: 1.6em;
   color: #33424c; }
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   line-height: 1;
   margin-top: 0;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif; }
+  font-family: 'Fredoka One', 'Coda', sans-serif; }
 
 h1 {
   font-size: 5rem;
@@ -358,7 +358,7 @@ code, tt, pre {
 
 code, tt {
   padding: 1px 3px;
-  font-family: 'Anonymous Pro', monospace, sans-serif;
+  font-family: 'Inconsolata', monospace, sans-serif;
   font-size: 0.85em;
   white-space: pre-wrap;
   border-radius: 2px; }
@@ -367,7 +367,7 @@ pre {
   margin: 1.6em 0;
   width: 100%;
   padding: 10px;
-  font-family: 'Anonymous Pro', monospace, sans-serif;
+  font-family: 'Inconsolata', monospace, sans-serif;
   font-size: 0.9em;
   white-space: pre;
   overflow: auto;
@@ -500,7 +500,7 @@ margin on the iframe, cause it breaks stuff. */
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 300;
-  font-family: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
+  font-family: 'Fredoka One', sans-serif;
   text-shadow: 0 1px 6px rgba(0, 0, 0, 0.1); }
 
 .blog-description {
@@ -508,7 +508,7 @@ margin on the iframe, cause it breaks stuff. */
   font-size: 1.8rem;
   line-height: 1.5em;
   font-weight: 300;
-  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', 'Helvetica Neue', sans-serif;
+  font-family: 'Fredoka One', sans-serif;
   letter-spacing: 0;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); }
 
@@ -563,12 +563,12 @@ margin on the iframe, cause it breaks stuff. */
   border-bottom: 0; }
 
 .post-excerpt:hover {
-  background: #f3ffc7; }
+  background: #B3E600; }
 
 .post-meta {
   display: inline-block;
   margin: 0 0 5px 0;
-  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
+  font-family: 'Karma', sans-serif;
   font-size: 1.5rem;
   color: #9aa7b0; }
 
@@ -794,7 +794,7 @@ margin on the iframe, cause it breaks stuff. */
   width: 80%;
   max-width: 700px;
   margin: 4rem auto;
-  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
+  font-family: 'Karma', sans-serif;
   font-size: 1.3rem;
   color: #9aa7b0;
   text-align: center; }
@@ -834,7 +834,7 @@ margin on the iframe, cause it breaks stuff. */
   margin: 8rem 0 0 0;
   padding: 4rem 0;
   border-top: #e5eef3 1px solid;
-  font-family: 'Ideal Sans SSm A', 'Ideal Sans SSm B', sans-serif;
+  font-family: 'Karma', sans-serif;
   font-size: 1.3rem;
   line-height: 1.7em;
   color: #b6c2c9;
