@@ -76,8 +76,7 @@ mark {
   background: #ff0;
   color: #000; }
 
-code, kbd, pre,
-samp {
+code, kbd, pre, samp {
   font-family: 'Inconsolata', monospace;
   font-size: 1em; }
 
@@ -228,7 +227,7 @@ body {
   height: 100%;
   max-height: 100%;
   font-family: 'Karma', 'Georgia', serif;
-  font-size: 2.0rem;
+  font-size: 2rem;
   line-height: 1.6em;
   color: #33424c; }
 
